@@ -183,7 +183,8 @@ def show_exam_result(request, course_id, submission_id):
     context = {
         'course': course,
         'score': total_score,
-        'question_results': question_results
+        'question_results': question_results,
+        'submission': submission
     }
 
     return render(request, 'onlinecourse/exam_result_bootstrap.html', context)
